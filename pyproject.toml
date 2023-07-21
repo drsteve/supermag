@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "supermag"
+authors = [
+    {name = "Daniel Welling", email = "dwelling@umich.edu"},
+]
+description = "A small package for reading anf handling SuperMAG files"
+version = "1.0.0"
+readme = "README.md"
+requires-python = ">=3.7"
+license = {text = "None"}
+classifiers = [
+    "Programming Language :: Python :: 3",
+]
+dependencies = [
+    "numpy",
+]
+
+[tool.setuptools.packages.find]
+namespaces = false
+
+[tool.setuptools.package-data]
+supermag = ["*.txt"]
